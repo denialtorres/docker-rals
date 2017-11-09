@@ -14,3 +14,10 @@ you can verify that the container is running with:
 and see the next result
    
 https://i.imgur.com/6Cp1IRJ.png
+
+
+build the dockerfile
+
+
+    sudo docker build -t denialtorres/todo .
+

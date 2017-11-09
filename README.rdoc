@@ -21,3 +21,23 @@ build the dockerfile
 
     sudo docker build -t denialtorres/todo .
 
+now you should run some variables to make the app work
+
+    export PORT=8080
+
+and the SECRET_KEY_BASE variable
+
+    export SECRET_KEY_BASE=$(rake secret)
+    
+    
+now you are ready to run the container
+
+	
+        sudo docker run -p 8080:8080 -e SECRET_KEY_BASE=$SECRET_KEY_BASE --link db:pg denialtorres/todo
+
+
+open the browser and enter to the address http://YOURLOCALIP:8080"
+
+and the app now should be running
+
+https://i.imgur.com/UwhU0ND.png

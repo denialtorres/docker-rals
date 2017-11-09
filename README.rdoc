@@ -6,8 +6,8 @@ This app is working with postgresql
 First step is install the postgresql container
 
     sudo docker run --name db -e POSTGRES_PASSWORD=manager -e POSTGRES_USER=rails -d postgres:9.4
-  
- you can verify that the container is running with:
+
+you can verify that the container is running with:
 
     sudo docker ps
 

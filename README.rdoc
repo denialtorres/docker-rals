@@ -10,6 +10,7 @@ First step is install the postgresql container
  you can verify that the container is running with:
 
     sudo docker ps
-   en see the next result
+
+and see the next result
    
 https://i.imgur.com/6Cp1IRJ.png
